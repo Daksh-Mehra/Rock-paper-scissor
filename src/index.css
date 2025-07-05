@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.landingbg{
+    background-image: url(warrior.svg);
+    background-size: 69vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
