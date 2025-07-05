@@ -121,7 +121,9 @@ const Game = ({showgame}) => {
 
         {
             moves.map((move)=>(
-                <button key={move} className='ring-3 rounded-2xl p-2 ring-yellow-400 hover:bg-gray-900 transition hover:scale-105 hover:ring-white'onClick={()=>playRound (move)}><img src={`${move}.svg`} alt={`${move} pic`}  className='w-20 h-20 cursor-pointer' /></button>
+                <button key={move} className='ring-3 rounded-2xl p-2 ring-yellow-400 hover:bg-gray-900 transition hover:scale-105 hover:ring-white'onClick={()=>{playRound (move);
+                  playsound();
+                }}><img src={`${move}.svg`} alt={`${move} pic`}  className='w-20 h-20 cursor-pointer' /></button>
             ))
         }
         
