@@ -79,7 +79,7 @@ const Game = ({showgame}) => {
                         setshowModal(false);
                         showgame(false);}}/>
     }
-    <div className='bg-black w-screen h-screen'>
+    <div className='bg-black w-screen relative min-h-screen'>
       <h1 className='text-white text-center text-4xl font-bold py-5 lg:py-3'>Rock, paper and scissors</h1>
 
 
@@ -99,9 +99,9 @@ const Game = ({showgame}) => {
       </div>
 
 
-      <div className='text-white flex h-1/5 flex-col w-full justify-center  items-center gap-4 xl:gap-2 mt-6 '>
-        <p className='text-xl font-medium min-h-[30px]'> {result}</p>
-        <p className='text-2xl font-bold  text-yellow-400 pt-2 xl:pt-1'>SCORE</p>
+      <div className='text-white flex  flex-col w-full justify-center  items-center  gap:2 xl:gap-2 xl:mt-6 '>
+        <p className='lg:text-xl text-lg min-h-[18px] font-medium lg:min-h-[30px]'> {result}</p>
+        <p className='text-2xl font-bold  text-yellow-400  xl:pt-1'>SCORE</p>
         <div className='flex justify-around md:justify-center md:gap-36 xl:gap-60 w-full pt-2 '>
           <p className='text-xl font-bold '>YOU : <span className='text-yellow-400'>{point.you}/5</span></p>
           
