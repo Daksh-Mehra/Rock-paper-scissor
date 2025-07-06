@@ -100,7 +100,7 @@ const Game = ({showgame}) => {
 
 
       <div className='text-white flex  flex-col w-full justify-center  items-center  gap:2 xl:gap-2 xl:mt-6 '>
-        <p className='lg:text-xl text-lg min-h-[18px] font-medium lg:min-h-[30px]'> {result}</p>
+        <p className='lg:text-xl text-lg  font-medium min-h-[30px]'> {result}</p>
         <p className='text-2xl font-bold  text-yellow-400  xl:pt-1'>SCORE</p>
         <div className='flex justify-around md:justify-center md:gap-36 xl:gap-60 w-full pt-2 '>
           <p className='text-xl font-bold '>YOU : <span className='text-yellow-400'>{point.you}/5</span></p>
